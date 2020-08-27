@@ -1,5 +1,4 @@
 import React from 'react';
-import FirstChild from './FirstChild';
 import styles from '../Styles/Parent.module.css';
 export default function ParentComponent(props) {
   return (

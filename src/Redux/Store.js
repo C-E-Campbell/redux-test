@@ -1,5 +1,6 @@
 import { createStore, combineReducers } from 'redux';
-import text from './Reducers/text';
+import textReducer from './Reducers/text';
 
-const reducer = combineReducers(text);
-const store = createStore(todoApp);
+const reducer = combineReducers({ textReducer });
+const store = createStore(reducer);
+export default store;

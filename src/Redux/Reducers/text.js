@@ -1,16 +1,18 @@
-import { UPDATE_TEXT, updateText } from '../ActionCreators';
+import { UPDATE_TEXT } from '../ActionCreators';
 
-const intialState = {
-  text: '',
+const initialState = {
+  text: 'Hello',
 };
 
-function textReducer(state = intialState, action) {
+function textReducer(state = initialState, action) {
   switch (action.type) {
     case UPDATE_TEXT:
       return Object.assign({}, state, {
         text: action.payload,
       });
     default:
-      return state;
+      return initialState;
   }
 }
+
+export default textReducer;

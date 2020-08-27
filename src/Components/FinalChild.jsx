@@ -17,6 +17,7 @@ function FinalChild(props) {
       <button
         onClick={() => {
           props.updateText(text);
+          setText('');
         }}
         className={styles.button}
       >

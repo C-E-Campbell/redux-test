@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { updateText } from '../Redux/ActionCreators';
+
 import styles from '../Styles/FinalComponent.module.css';
 function FinalChild2(props) {
   return (
@@ -17,7 +17,5 @@ const mapStateToProps = (state) => {
     text: state.text,
   };
 };
-
-const mapDispatchToProps = { updateText };
 
 export default connect(mapStateToProps, null)(FinalChild2);

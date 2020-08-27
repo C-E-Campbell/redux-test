@@ -20,7 +20,7 @@ function FinalChild(props) {
         }}
         className={styles.button}
       >
-        Send it
+        Dispatch it!
       </button>
     </div>
   );

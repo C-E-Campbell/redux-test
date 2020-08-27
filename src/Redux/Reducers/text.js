@@ -1,7 +1,7 @@
 import { UPDATE_TEXT } from '../ActionCreators';
 
 const initialState = {
-  text: 'Hello',
+  text: '',
 };
 
 function textReducer(state = initialState, action) {
@@ -11,7 +11,7 @@ function textReducer(state = initialState, action) {
         text: action.payload,
       });
     default:
-      return initialState;
+      return state;
   }
 }
 

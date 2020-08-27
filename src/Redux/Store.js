@@ -1,6 +1,5 @@
-import { createStore, combineReducers } from 'redux';
+import { createStore } from 'redux';
 import textReducer from './Reducers/text';
 
-const reducer = combineReducers({ textReducer });
-const store = createStore(reducer);
+const store = createStore(textReducer);
 export default store;

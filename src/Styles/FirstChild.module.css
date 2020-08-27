@@ -1,0 +1,15 @@
+.container {
+  margin: 0 auto;
+  padding: 1rem 0;
+  width: 88%;
+  height: 70%;
+  background-color: rgb(134, 53, 53);
+  border-radius: 8px;
+}
+
+.headline {
+  color: rgb(201, 200, 200);
+  font-family: 'Alata', sans-serif;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.479);
+}

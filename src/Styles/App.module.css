@@ -1,0 +1,29 @@
+.container {
+  height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+  text-align-last: center;
+  background-image: linear-gradient(
+      35deg,
+      rgba(29, 29, 29, 0.274) 30%,
+      rgba(33, 107, 97, 0.705) 50%,
+      rgba(12, 36, 36, 0.336) 100%
+    ),
+    url('../Assets/bg.jpg');
+  background-size: cover;
+}
+
+.headline {
+  color: rgb(243, 243, 243);
+  font-family: 'Alata', sans-serif;
+  letter-spacing: 2px;
+  font-size: 2rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.479);
+}
+
+.componentContainer {
+  display: flex;
+  margin: 0 auto;
+  width: 70%;
+  justify-content: space-between;
+}

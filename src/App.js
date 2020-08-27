@@ -1,24 +1,29 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
+import styles from './Styles/App.module.css';
+import ParentComponent from './Components/ParentComponent';
+import FirstChild from './Components/FirstChild';
+import FinalChild from './Components/FinalChild';
+import FinalChild2 from './Components/FinalChild2';
+import StoreComponent from './Components/StoreComponent';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={styles.container}>
+      <h2 data-aos='fade-down' className={styles.headline}>
+        React & Redux Example
+      </h2>
+      <StoreComponent />
+      <div className={styles.componentContainer}>
+        <ParentComponent fade={'right'}>
+          <FirstChild>
+            <FinalChild />
+          </FirstChild>
+        </ParentComponent>
+        <ParentComponent fade={'left'}>
+          <FirstChild>
+            <FinalChild2 />
+          </FirstChild>
+        </ParentComponent>
+      </div>
     </div>
   );
 }
